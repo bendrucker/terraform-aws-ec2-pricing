@@ -21,6 +21,7 @@ locals {
   # reserve the remaining 20% for system components
   developer_quota = 0.8
 }
+
 resource "kubernetes_resource_quota" "developers" {
   metadata {
     name      = "developers-quota"
