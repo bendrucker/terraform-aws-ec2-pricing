@@ -1,4 +1,4 @@
-# terraform-aws-ec2-pricing
+# terraform-aws-ec2-pricing [![terraform workflow status](https://github.com/bendrucker/terraform-aws-ec2-pricing/workflows/terraform/badge.svg?branch=master)](https://github.com/bendrucker/terraform-aws-ec2-pricing/actions?query=workflow%3Aterraform)
 
 > Terraform module that uses the [AWS Pricing API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html) to query EC2 instance type attributes
 
