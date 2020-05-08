@@ -13,6 +13,9 @@ func TestStandardInstance(t *testing.T) {
 		Vars: map[string]interface{}{
 			"instance_type": "m5.large",
 		},
+		EnvVars: map[string]string{
+			"AWS_DEFAULT_REGION": "us-east-1",
+		},
 	}
 
 	terraform.InitAndApply(t, options)
@@ -26,6 +29,9 @@ func TestNanoInstance(t *testing.T) {
 		TerraformDir: "../",
 		Vars: map[string]interface{}{
 			"instance_type": "t3.nano",
+		},
+		EnvVars: map[string]string{
+			"AWS_DEFAULT_REGION": "us-east-1",
 		},
 	}
 
