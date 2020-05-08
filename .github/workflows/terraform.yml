@@ -4,9 +4,7 @@ on: [push]
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Setup go
@@ -16,7 +14,11 @@ jobs:
     - name: Setup Terraform
       uses: marocchino/setup-terraform@v1.0.1
       with:
-        version: "0.12.20"
+        version: "0.12.24"
+    - name: terraform validate
+      run: terraform init && terraform validate
+      env:
+        AWS_DEFAULT_REGION: us-east-1
     - name: Run tests
       run: make test
       env:
