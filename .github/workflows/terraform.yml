@@ -13,6 +13,8 @@ jobs:
         go-version: "1.13.8"
     - uses: hashicorp/setup-terraform@v1
     - name: terraform validate
+      with:
+        terraform_wrapper: false
       run: terraform init && terraform validate
       env:
         AWS_DEFAULT_REGION: us-east-1
