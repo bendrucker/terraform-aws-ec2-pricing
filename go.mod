@@ -3,7 +3,7 @@ module github.com/bendrucker/terraform-aws-ec2-pricing
 go 1.19
 
 require (
-	github.com/gruntwork-io/terratest v0.43.8
+	github.com/gruntwork-io/terratest v0.43.9
 	github.com/stretchr/testify v1.8.4
 )
 
