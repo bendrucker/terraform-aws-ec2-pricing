@@ -1,6 +1,6 @@
 module github.com/bendrucker/terraform-aws-ec2-pricing
 
-go 1.21.4
+go 1.21.5
 
 require (
 	github.com/gruntwork-io/terratest v0.46.7
