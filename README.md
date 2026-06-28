@@ -63,7 +63,7 @@ resource "kubernetes_resource_quota" "developers" {
 
 ## Testing
 
-This module is tested via [Terratest](https://github.com/gruntwork-io/terratest).
+This module is tested with [`terraform test`](https://developer.hashicorp.com/terraform/language/tests).
 
 ```sh
 make test

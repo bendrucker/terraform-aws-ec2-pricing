@@ -1,4 +1,4 @@
 .PHONY: test
 
 test:
-	go test -v ./...
+	terraform test
